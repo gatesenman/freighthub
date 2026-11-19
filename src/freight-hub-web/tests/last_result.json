@@ -1,0 +1,1047 @@
+[
+ {
+  "name": "js_api 公开成员全是方法（window 等对象为下划线私有）",
+  "pass": true,
+  "detail": "close,get_rect,minimize,save_bytes,save_file,set_rect,toggle_maximize"
+ },
+ {
+  "name": "启动先显示 loading 页（含错误回显函数）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "7 个平台都已注册",
+  "pass": true,
+  "detail": "yuntu,zhonghang,xinhang,huanyang,yanwen,shunfeng,yutong"
+ },
+ {
+  "name": "顺丰/雨桐为待验证占位",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "环洋：配置了 API 授权则为 API 模式，否则待配置",
+  "pass": true,
+  "detail": "idle"
+ },
+ {
+  "name": "密码不会通过接口回传",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "美国 1kg · 云途 返回渠道",
+  "pass": true,
+  "detail": "33 条 18271ms "
+ },
+ {
+  "name": "美国 1kg · 中航 返回渠道",
+  "pass": true,
+  "detail": "52 条 2826ms "
+ },
+ {
+  "name": "美国 1kg · 欣航 返回渠道",
+  "pass": true,
+  "detail": "36 条 3137ms "
+ },
+ {
+  "name": "美国 1kg · 环洋(API 模式)返回渠道",
+  "pass": true,
+  "detail": "20 条 5785ms "
+ },
+ {
+  "name": "美国 1kg · 汇总结果按价格升序",
+  "pass": true,
+  "detail": "共 141 条"
+ },
+ {
+  "name": "美国 1kg · 并发总耗时小于各平台耗时之和",
+  "pass": true,
+  "detail": "18.3s"
+ },
+ {
+  "name": "英国 0.5kg · 云途 返回渠道",
+  "pass": true,
+  "detail": "16 条 "
+ },
+ {
+  "name": "英国 0.5kg · 中航 返回渠道",
+  "pass": true,
+  "detail": "34 条 "
+ },
+ {
+  "name": "英国 0.5kg · 欣航 返回渠道",
+  "pass": true,
+  "detail": "38 条 "
+ },
+ {
+  "name": "英国 0.5kg · 环洋(API 模式)返回渠道",
+  "pass": true,
+  "detail": "20 条 "
+ },
+ {
+  "name": "德国 2kg 带邮编 · 至少两家成功",
+  "pass": true,
+  "detail": "云途:23,中航:33,欣航:41,环洋:20"
+ },
+ {
+  "name": "中航 token 损坏后自动重登并成功",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "查询历史已记录",
+  "pass": true,
+  "detail": "4 条"
+ },
+ {
+  "name": "CSV 导出",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "空国家被拒绝",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 启动 loading 遮罩在加载完成后移除",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 标题栏与窗口按钮(最小化/最大化/关闭)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 菜单栏 5 项",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 图标工具栏",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 左侧树形导航",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 状态栏显示 7 个平台指示灯",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 无浏览器地址栏元素/页面为无边框布局",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 文件菜单弹出",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 平台菜单列出 7 个平台状态",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 美国 1kg 数据网格显示结果",
+  "pass": true,
+  "detail": "141 行"
+ },
+ {
+  "name": "UI 结果同时包含云途/中航/欣航/环洋",
+  "pass": true,
+  "detail": "中航,云途,欣航,环洋"
+ },
+ {
+  "name": "UI 标签页标题更新为查询条件",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 状态栏记录数/耗时",
+  "pass": true,
+  "detail": "记录：141 / 141 耗时：3.9 秒"
+ },
+ {
+  "name": "UI 行选中高亮 + 明细面板",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 列头点击排序(升/降)",
+  "pass": true,
+  "detail": "1806.0 > 117.0"
+ },
+ {
+  "name": "UI 时效列可排序",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 列宽可拖拽调整",
+  "pass": true,
+  "detail": "300 -> 380"
+ },
+ {
+  "name": "UI Shift 连选 4 行",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 右键菜单含复制/导出",
+  "pass": true,
+  "detail": "复制选中行 (4) Ctrl+C | 复制渠道名称 | 复制价格 | 导出选中行为 CSV… | 导出全部结果为 CSV… Ctrl+E | 只看选中行所属平台 | 清除筛选"
+ },
+ {
+  "name": "UI 复制选中行到剪贴板",
+  "pass": true,
+  "detail": "云途\tAE云途全球服装专线挂号\t专线/经济\t127\t6-12\t有\t价格优势，时效稳定"
+ },
+ {
+  "name": "UI 导出 CSV(工具栏)",
+  "pass": true,
+  "detail": "报价_US_1kg.csv 149 行"
+ },
+ {
+  "name": "UI 关键词筛选",
+  "pass": true,
+  "detail": "17 行"
+ },
+ {
+  "name": "UI 最高价筛选",
+  "pass": true,
+  "detail": "最高 196.0"
+ },
+ {
+  "name": "UI Ctrl+T 新建第二个查询标签",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 英国 0.5kg 各家都有结果(第二个标签)",
+  "pass": true,
+  "detail": "中航,云途,欣航,环洋"
+ },
+ {
+  "name": "UI 切回第一个标签结果仍在",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 账号页平台网格 7 行",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 账号页密码框不回显明文",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 顺丰登录模式测试连接提示暂未实现并引导切换 API",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 账号页有授权模式切换（登录账号授权 / 开放平台API授权）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 账号页网格有授权模式列",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 顺丰 API 模式显示 sf.global 字段（APP Key/Secret/AES/customerCode）与丰桥备选字段",
+  "pass": true,
+  "detail": "api_kind,app_key,app_secret,aes_key,customer_code,pay_month_card,products,sender_post,env,partner_id,check_word,auth"
+ },
+ {
+  "name": "UI 顺丰 API 模式字段含下拉选择框",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI API 模式显示文档状态徽标与文档链接",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI API 模式 secret 字段为密码框",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 开放平台API模式测试连接：未填凭据给出明确提示",
+  "pass": true,
+  "detail": "[13:03:30] 顺丰国际：未通过 — 尚未填写 APP Key、APP Secret 和 AES 秘钥"
+ },
+ {
+  "name": "UI 雨桐 API 模式：有公开文档 + 运价试算可用（无“仅连接测试”提示）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 欣航：无授权模式切换与账号字段，显示「公开网站，无需授权」",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 欣航：测试连接成功（无需登录）",
+  "pass": true,
+  "detail": "[13:03:33] 欣航：成功 — 公开页面可访问（HTTP 200），无需登录。（1.0s）"
+ },
+ {
+  "name": "UI 测完已恢复登录模式",
+  "pass": true,
+  "detail": "{'yuntu': 'login', 'zhonghang': 'login', 'xinhang': 'login', 'huanyang': 'api', 'yanwen': 'login', 'shunfeng': 'login', 'yutong': 'login'}"
+ },
+ {
+  "name": "UI 历史页有记录",
+  "pass": true,
+  "detail": "6 条"
+ },
+ {
+  "name": "UI 历史记录双击回看结果",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI Ctrl+W 关闭标签页",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "页面无 JS 报错",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "单平台异常不影响其他平台",
+  "pass": true,
+  "detail": "中航=RuntimeError: 模拟平台崩溃; 欣航=38条"
+ },
+ {
+  "name": "[API模式] 燕文 MD5 签名 = 官方文档示例 bc5f1792…",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 云途 HMAC-SHA256（含 body）与 SDK 规则一致",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 云途 HMAC-SHA256（GET 无 body）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 URLEncode 与 Java URLEncoder 一致（空格→+，~→%7E，* 保留，中文 UTF-8）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 msgDigest = Base64(MD5(URLEncode(msgData+timestamp+checkWord)))",
+  "pass": true,
+  "detail": "MZLCJpgWfw7dOmRPsEuMdw=="
+ },
+ {
+  "name": "[API模式] 7 个平台都有授权模式定义（欣航为单一公开模式）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 欣航：单一模式「公开网站，无需授权」，无账号/API 字段",
+  "pass": true,
+  "detail": "公开网站，无需授权"
+ },
+ {
+  "name": "[API模式] 默认授权模式为登录账号授权",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 欣航：未配置也可用（不是待配置账号）",
+  "pass": true,
+  "detail": "idle"
+ },
+ {
+  "name": "[API模式] 欣航：尝试切到 API 模式被忽略",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 有公开文档的平台标注 public，其余标注需申请",
+  "pass": true,
+  "detail": "{'yuntu': 'public', 'zhonghang': 'public', 'xinhang': 'apply', 'huanyang': 'public', 'yanwen': 'public', 'shunfeng': 'public', 'yutong': 'public'}"
+ },
+ {
+  "name": "[API模式] 每个平台 API 模式都有字段/文档说明",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 切换到 API 模式并保存字段",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] API 模式下 secret 字段不回显明文",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] API 模式字段值（非密钥）回显",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 切回登录模式后登录字段仍在（两套凭据互不覆盖）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 非法授权模式被拒绝(400)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 未知字段被忽略",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] API 模式未配置时状态为待配置账号",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 燕文 API 模式未填凭据 → 待配置账号",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] API 测试连接：未填凭据返回 no_account",
+  "pass": true,
+  "detail": "尚未填写客户号 user_id 和密钥 apitoken"
+ },
+ {
+  "name": "[API模式] 云途 API：先 OAuth2 client_credentials 换 token",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 云途 API：请求头 token/date/sign 且签名可复算",
+  "pass": true,
+  "detail": "DCmhrKsP+VA4hbGb"
+ },
+ {
+  "name": "[API模式] 云途 API：查询参数含国家/重量/邮编/尺寸",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 云途 API：运价解析（RMB 折算价、时效、渠道名）",
+  "pass": true,
+  "detail": "8.5"
+ },
+ {
+  "name": "[API模式] 云途 API：token 缓存复用（不重复换取）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 云途 API：测试连接",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 云途 API：appId/secret 错误 → 鉴权失败",
+  "pass": true,
+  "detail": "云途授权失败（HTTP 412）：wrong"
+ },
+ {
+  "name": "[API模式] 云途 API：401 重试后报鉴权失败",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 燕文 API：沙箱域名/公共参数/签名",
+  "pass": true,
+  "detail": "https://open-fat.yw56.com.cn/api/order?user_id=100000&method=calc.list"
+ },
+ {
+  "name": "[API模式] 燕文 API：运价解析",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 燕文 API：测试连接",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 燕文 API：文档成功码 code=0 也被接受",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 燕文 API：业务失败信息透传（如 GB 邮编必填）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 API：沙箱域名 + OAuth2 accessToken + 表单字段",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 API：msgData 含 customerCode/产品码/收寄国家/邮编/重量",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 API：逐个产品试算并解析",
+  "pass": true,
+  "detail": "顺丰国际 INT0007"
+ },
+ {
+  "name": "[API模式] 顺丰 API：数字签名模式带 msgDigest 且不带 accessToken",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 API：A1006 映射为鉴权失败",
+  "pass": true,
+  "detail": "顺丰接口失败：A1006 数字签名无效"
+ },
+ {
+  "name": "[API模式] 顺丰 登录模式提示暂未实现",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 欣航：无 API 实现、无 K5 字段",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 欣航：status 单一模式 + 文案",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] sf.global AES-256-CBC：加解密往返（含中文）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] sf.global AES：随机串不同 → 密文不同但都可解",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] sf.global AES：appKey 不符 → 解密校验失败",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] sf.global 纯 Python AES = FIPS-197 向量",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] sf.global 签名 = SHA256(字典序拼接 token/timestamp/nonce/encrypt)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰：API 模式文档指向 sf.global 开放平台",
+  "pass": true,
+  "detail": "https://openapi-portal.sf.global/document?firstMenu=DOC&secondMenu=75"
+ },
+ {
+  "name": "[API模式] 顺丰 sf.global：测试连接（token + AES 产品查询）",
+  "pass": true,
+  "detail": "顺丰国际开放平台授权成功（正式环境），AES 报文加解密正常，国际产品查询返回 2 个产品。"
+ },
+ {
+  "name": "[API模式] 顺丰 sf.global：token 为 GET + appKey/appSecret 参数",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 sf.global：dispatch 头（appKey/token/msgType/signature）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 sf.global：报文加密（请求体非明文）且含收寄国家/邮编/重量/客户编码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 sf.global：逐产品试算解析",
+  "pass": true,
+  "detail": "国际标快（INT0007）"
+ },
+ {
+  "name": "[API模式] 顺丰 sf.global：缺 customerCode 提示补填",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 顺丰 sf.global：1004 没权限 → 给出关联 API 的指引（manual）",
+  "pass": true,
+  "detail": "授权成功（已取得 token），但该应用没有「国际产品查询」接口权限（1004 "
+ },
+ {
+  "name": "[API模式] 顺丰：丰桥备选仍可选",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS API：中航 getAuth + 渠道列表",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 C001 / 公司 1），渠道列表 2 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "[API模式] OIS API：中航 状态=运价试算可用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS API：环洋 getAuth + 渠道列表",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 C001 / 公司 1），渠道列表 2 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "[API模式] OIS API：环洋 状态=运价试算可用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS API：雨桐 getAuth + 渠道列表",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 C001 / 公司 1），渠道列表 2 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "[API模式] OIS API：雨桐 状态=运价试算可用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS API：环洋 默认对接环境为易快通 ekttech.net/pos-web",
+  "pass": true,
+  "detail": "https://ekttech.net/pos-web,https://openapi.intelink.net.cn"
+ },
+ {
+  "name": "[API模式] OIS API：getAuth 表单提交 appKey/appSecret，默认域名 openapi.intelink.net.cn",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS 运价试算：body1 含 weig/destNo/packing/reZip/pieces",
+  "pass": true,
+  "detail": "{\"weig\": 1, \"destNo\": \"US\", \"packing\": \"WPX\", \"reZip\": \"90001\", \"pieces\": [{\"actual\": 1, \"length\": 30, \"width\": 20, \"height\": 10}]}"
+ },
+ {
+  "name": "[API模式] OIS 签名：MD5(Base64(排序参数)+appSecret) 大写，头 token 伪装可还原",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS 解析：占位价 1000000 被过滤，其余 3 条",
+  "pass": true,
+  "detail": "['USZ-H01美国包中包6000', 'HKZ-01中港', '美元渠道']"
+ },
+ {
+  "name": "[API模式] OIS 解析：总价/币种/时效/分组/费用明细",
+  "pass": true,
+  "detail": "[{\"label\": \"运费\", \"value\": \"123\"}, {\"label\": \"燃油\", \"value\": \"10\"}, {\"label\": \"附加费"
+ },
+ {
+  "name": "[API模式] OIS 解析：极低价（中港段）打上疑似境内标记",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS 汇总查询接口可用（API 模式 → 查价而不是待申请）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS：token 过期(1005) → 自动重新授权重试",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] OIS API：错误密钥 → 鉴权失败",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 模式切换后登录模式的原有实现保留",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[API模式] 【在线】燕文官方沙箱：鉴权成功(user_id=100000)",
+  "pass": true,
+  "detail": "开放平台 API 鉴权成功（沙箱环境，国家列表 250 项）。 6.1s"
+ },
+ {
+  "name": "[API模式] 【在线】燕文官方沙箱：calc.list 运价试算可调用",
+  "pass": true,
+  "detail": "29 条"
+ },
+ {
+  "name": "[API模式] 【在线】顺丰 sf.global 沙箱（文档公开凭据）：token + AES 加解密 + 国际产品查询",
+  "pass": true,
+  "detail": "5 个产品"
+ },
+ {
+  "name": "[API模式] 【在线】欣航公开价页面：美国 1kg 有报价",
+  "pass": true,
+  "detail": "36 条，最低 244.96"
+ },
+ {
+  "name": "[API模式] 【在线·只读】雨桐 OIS：getAuth + getProductList",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 *** / 公司 10405），渠道列表 116 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "[API模式] 【在线·只读】雨桐 OIS：美国 1kg 运价试算返回多个渠道",
+  "pass": true,
+  "detail": "60 条，最低（≥10）143.0"
+ },
+ {
+  "name": "[API模式] 【在线·只读】环洋 OIS：getAuth + getProductList",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 <acct> / 公司 -），渠道列表 940 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "[API模式] 【在线·只读】环洋 OIS：US 1kg 运价试算返回多个渠道",
+  "pass": true,
+  "detail": "20 条，最低 250.81"
+ },
+ {
+  "name": "[API模式] 【在线·只读】环洋 OIS：GB 0.5kg 运价试算返回多个渠道",
+  "pass": true,
+  "detail": "20 条，最低 191.86"
+ },
+ {
+  "name": "[API模式] 【在线】云途 prod 假凭据 → 授权失败",
+  "pass": true,
+  "detail": "云途授权失败（HTTP 412）：应用id或应用秘钥错误"
+ },
+ {
+  "name": "[API模式] 【在线】顺丰沙箱 假凭据 → 授权失败",
+  "pass": true,
+  "detail": "顺丰授权失败：A1011 auth_error:partner_is_not_exist or secret_is_error"
+ },
+ {
+  "name": "[API模式] 【在线】顺丰国际 sf.global 假凭据 → 授权失败",
+  "pass": true,
+  "detail": "顺丰国际授权失败：1005 App is not exist"
+ },
+ {
+  "name": "[API模式] 【在线】OIS 假 appKey → 鉴权失败",
+  "pass": true,
+  "detail": "OIS 授权失败：应用不存在"
+ },
+ {
+  "name": "[账号导入] xlsx 读写往返（中文/特殊字符/换行）",
+  "pass": true,
+  "detail": "{'Sheet1': [['平台', '说明'], ['云途 & <b>', '第一行\\n第二行 \"引号\"'], ['中文', '123']]}"
+ },
+ {
+  "name": "[账号导入] 模板 xlsx 可下载且为 3 个工作表",
+  "pass": true,
+  "detail": "['账号配置', '字段说明', '示例（假数据）']"
+ },
+ {
+  "name": "[账号导入] 模板表头含 平台/授权方式/账号/密码/appKey/appSecret/AES秘钥/客户编码/对接URL/备注",
+  "pass": true,
+  "detail": "['平台', '授权方式', '账号', '密码', 'appKey', 'appSecret', 'AES秘钥', '客户编码', '对接URL', '其他参数', '备注', '启用']"
+ },
+ {
+  "name": "[账号导入] 模板文件头是 zip(xlsx) 且文件名为 账号导入模板.xlsx",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 字段说明页覆盖 6 个平台和两种授权方式",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 模板数据区无真实账号（账号配置页仅表头）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 模板 CSV 可下载并能被解码（UTF-8 BOM）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 空模板导入 → 400 提示没有数据",
+  "pass": true,
+  "detail": "{'detail': '读取文件失败：没有读到任何数据行：请确认第一行是表头（平台、授权方式、账号、密码…），下面一行一"
+ },
+ {
+  "name": "[账号导入] 空文件导入 → 400",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 旧表格式：云途/中航 → 新增，欣航 → 跳过，未知平台 → 错误",
+  "pass": true,
+  "detail": "['add', 'add', 'skip', 'error']"
+ },
+ {
+  "name": "[账号导入] 旧表格式默认按登录模式",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 预览响应不含任何密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 预览阶段不写入配置（确认前不落盘）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 确认后写入 云途/中航 登录账号",
+  "pass": true,
+  "detail": "['yuntu', 'zhonghang']"
+ },
+ {
+  "name": "[账号导入] 登录模式下 网址 列不写入配置（不覆盖固定系统地址）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 应用响应/平台状态不含密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 应用结果标出要自动测试的平台（每平台一次）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 批次只能使用一次/过期后提示重新选择",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 再次导入：账号变了 → 覆盖；完全相同 → 无变化",
+  "pass": true,
+  "detail": "['overwrite', 'same']"
+ },
+ {
+  "name": "[账号导入] 打码(****)密码不会覆盖原密码，账号被更新",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 空白密码不会清空原密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 只写入勾选的行",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] API 模式 6 行均可识别为新增/覆盖",
+  "pass": true,
+  "detail": "[('云途', 'add', ''), ('环洋', 'add', ''), ('燕文', 'add', ''), ('顺丰国际', 'add', ''), ('雨桐', 'add', ''), ('中航', 'add', '')]"
+ },
+ {
+  "name": "[账号导入] API 模式预览不含密钥明文",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 云途 API：appKey→app_id、appSecret→app_secret、其他参数 env",
+  "pass": true,
+  "detail": "{'username': 'user-yt2@example.invalid', 'password': 'FAKE-PW-LOGIN-A', 'auth_mode': 'api', 'enabled': True, 'app_id': 'FAKE-APPID-YT', 'env': 'sandbox', 'remark': '云途备注'}"
+ },
+ {
+  "name": "[账号导入] 环洋 API：appKey/appSecret/对接URL→api_base",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 燕文 API：appKey→user_id、appSecret→api_token、city_id",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 顺丰 API：appKey/appSecret/AES秘钥/客户编码",
+  "pass": true,
+  "detail": "['aes_key', 'app_key', 'app_secret', 'auth_mode', 'customer_code', 'enabled']"
+ },
+ {
+  "name": "[账号导入] 雨桐 API：appKey/appSecret/对接URL",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 中航 API 写入且「启用=否」生效；原登录账号保留",
+  "pass": true,
+  "detail": "False"
+ },
+ {
+  "name": "[账号导入] API 行写入后该平台授权方式切换为 API",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 备注列被保存",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 平台状态接口不回显任何密钥/密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 自动测试：每个平台只测一次",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 错误行：授权方式无法识别/未知参数/参数值不在可选项；同模式重复行标记 dup（后者生效）",
+  "pass": true,
+  "detail": "['error', 'dup', 'overwrite', 'error', 'error'] ['授权方式「魔法」无法识别，请填 登录 或 API', '与第 4 行重复，以后者为准', '', '其他参数里的「不存在参数」不是该平台的字段（可用：access_token, app_id, app_secret, env, source_key）', '参数 env 的值「不存在」不在可选项内（prod, sandbox）']"
+ },
+ {
+  "name": "[账号导入] 错误行不可被应用（即使勾选）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 没有旧配置时缺必填（appSecret/密码）→ 错误并指出缺哪项",
+  "pass": true,
+  "detail": "['缺少：appSecret', '缺少：密码']"
+ },
+ {
+  "name": "[账号导入] 无表头 CSV（GB18030）：按 平台/账号/密码/网址 读取",
+  "pass": true,
+  "detail": "{'batch': '9858bcb6c6f9', 'rows': [{'i': 0, 'row': 1, 'platform_text': '云途', 'pid': 'yuntu', 'name':"
+ },
+ {
+  "name": "[账号导入] 制表符分隔文本（从 Excel 复制）可读取",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 表头别名/乱序（英文列名）可识别",
+  "pass": true,
+  "detail": "{'batch': '1da3de28c9ea', 'rows': [{'i': 0, 'row': 2, 'platform_text': 'yuntu', 'pid': 'yuntu', 'nam"
+ },
+ {
+  "name": "[账号导入] 导出 xlsx/密钥不导出：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "[账号导入] 导出 csv/密钥不导出：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "[账号导入] 导出 xlsx/密钥打码：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "[账号导入] 导出 csv/密钥打码：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "[账号导入] 打码导出的行里能看到打码形式（含 ****）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 导出不提供明文选项",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 导出(打码)再导入：不会破坏已有密钥",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 导出(不含密钥)再导入：不会清空已有密钥",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] 配置文件权限仍为 600",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] UI 文件菜单含 导入账号/下载模板/导出",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] UI 平台账号页有 批量导入/下载模板/导出 按钮",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] UI 预览表：4 行，含 新增/跳过/错误 标签，不显示密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] UI 预览：可导入行默认勾选，错误/跳过行禁用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] UI 导入完成：逐个自动测试并显示结果（成功 2）",
+  "pass": true,
+  "detail": "tested=['yuntu', 'huanyang']"
+ },
+ {
+  "name": "[账号导入] UI 导出（默认不导出密钥）得到 xlsx 且不含密钥",
+  "pass": true,
+  "detail": "账号配置导出_不含密钥.xlsx"
+ },
+ {
+  "name": "[账号导入] UI 下载模板（Excel）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "[账号导入] UI 无 JS 报错",
+  "pass": true,
+  "detail": "[]"
+ }
+]

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>快速询价 FreightHub</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/static/quick.css?v=2">
+</head>
+<body>
+<div id="qw">
+  <div id="qh" class="pywebview-drag-region"><span class="ti">快速询价</span><span id="qhSub" class="pywebview-drag-region">各平台最低价</span><span id="qhKey"></span><button id="qx" title="关闭 (Esc)">✕</button></div>
+  <form id="qf" autocomplete="off">
+    <div class="r1">
+      <label>目的国<input id="inCountry" list="countryList" placeholder="美国 / US" autocomplete="off"></label>
+      <label class="w">重量 kg<input id="inWeight" type="number" min="0" step="0.01" placeholder="1"></label>
+      <button id="bGo" type="submit" class="go">查询</button>
+    </div>
+    <div class="r2"><span>尺寸 cm（可选）</span><input id="inL" type="number" min="0" placeholder="长"><i>×</i><input id="inW" type="number" min="0" placeholder="宽"><i>×</i><input id="inH" type="number" min="0" placeholder="高"></div>
+  </form>
+  <div id="qbest" class="best idle">输入目的国和重量，按 Enter 查询各平台最低价</div>
+  <div id="qlist"></div>
+  <div id="qf2"><label><input type="checkbox" id="cbAuto">失去焦点时自动关闭</label><span class="hint">Enter 查询 · Esc 关闭 · 点击行在主窗口看全部渠道</span></div>
+</div>
+<datalist id="countryList"></datalist>
+<script src="/static/trial.js?v=1"></script>
+<script src="/static/quick.js?v=2"></script>
+</body>
+</html>

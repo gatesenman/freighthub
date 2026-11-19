@@ -1,0 +1,287 @@
+[
+ {
+  "name": "xlsx 读写往返（中文/特殊字符/换行）",
+  "pass": true,
+  "detail": "{'Sheet1': [['平台', '说明'], ['云途 & <b>', '第一行\\n第二行 \"引号\"'], ['中文', '123']]}"
+ },
+ {
+  "name": "模板 xlsx 可下载且为 3 个工作表",
+  "pass": true,
+  "detail": "['账号配置', '字段说明', '示例（假数据）']"
+ },
+ {
+  "name": "模板表头含 平台/授权方式/账号/密码/appKey/appSecret/AES秘钥/客户编码/对接URL/备注",
+  "pass": true,
+  "detail": "['平台', '授权方式', '账号', '密码', 'appKey', 'appSecret', 'AES秘钥', '客户编码', '对接URL', '其他参数', '备注', '启用']"
+ },
+ {
+  "name": "模板文件头是 zip(xlsx) 且文件名为 账号导入模板.xlsx",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "字段说明页覆盖 6 个平台和两种授权方式",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "模板数据区无真实账号（账号配置页仅表头）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "模板 CSV 可下载并能被解码（UTF-8 BOM）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "空模板导入 → 400 提示没有数据",
+  "pass": true,
+  "detail": "{'detail': '读取文件失败：没有读到任何数据行：请确认第一行是表头（平台、授权方式、账号、密码…），下面一行一"
+ },
+ {
+  "name": "空文件导入 → 400",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "旧表格式：云途/中航 → 新增，欣航 → 跳过，未知平台 → 错误",
+  "pass": true,
+  "detail": "['add', 'add', 'skip', 'error']"
+ },
+ {
+  "name": "旧表格式默认按登录模式",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "预览响应不含任何密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "预览阶段不写入配置（确认前不落盘）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "确认后写入 云途/中航 登录账号",
+  "pass": true,
+  "detail": "['yuntu', 'zhonghang']"
+ },
+ {
+  "name": "登录模式下 网址 列不写入配置（不覆盖固定系统地址）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "应用响应/平台状态不含密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "应用结果标出要自动测试的平台（每平台一次）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "批次只能使用一次/过期后提示重新选择",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "再次导入：账号变了 → 覆盖；完全相同 → 无变化",
+  "pass": true,
+  "detail": "['overwrite', 'same']"
+ },
+ {
+  "name": "打码(****)密码不会覆盖原密码，账号被更新",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "空白密码不会清空原密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "只写入勾选的行",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "API 模式 6 行均可识别为新增/覆盖",
+  "pass": true,
+  "detail": "[('云途', 'add', ''), ('环洋', 'add', ''), ('燕文', 'add', ''), ('顺丰国际', 'add', ''), ('雨桐', 'add', ''), ('中航', 'add', '')]"
+ },
+ {
+  "name": "API 模式预览不含密钥明文",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "云途 API：appKey→app_id、appSecret→app_secret、其他参数 env",
+  "pass": true,
+  "detail": "{'username': 'user-yt2@example.invalid', 'password': 'FAKE-PW-LOGIN-A', 'auth_mode': 'api', 'enabled': True, 'app_id': 'FAKE-APPID-YT', 'env': 'sandbox', 'remark': '云途备注'}"
+ },
+ {
+  "name": "环洋 API：appKey/appSecret/对接URL→api_base",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "燕文 API：appKey→user_id、appSecret→api_token、city_id",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 API：appKey/appSecret/AES秘钥/客户编码",
+  "pass": true,
+  "detail": "['aes_key', 'app_key', 'app_secret', 'auth_mode', 'customer_code', 'enabled']"
+ },
+ {
+  "name": "雨桐 API：appKey/appSecret/对接URL",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "中航 API 写入且「启用=否」生效；原登录账号保留",
+  "pass": true,
+  "detail": "False"
+ },
+ {
+  "name": "API 行写入后该平台授权方式切换为 API",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "备注列被保存",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "平台状态接口不回显任何密钥/密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "自动测试：每个平台只测一次",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "错误行：授权方式无法识别/未知参数/参数值不在可选项；同模式重复行标记 dup（后者生效）",
+  "pass": true,
+  "detail": "['error', 'dup', 'overwrite', 'error', 'error'] ['授权方式「魔法」无法识别，请填 登录 或 API', '与第 4 行重复，以后者为准', '', '其他参数里的「不存在参数」不是该平台的字段（可用：access_token, app_id, app_secret, env, source_key）', '参数 env 的值「不存在」不在可选项内（prod, sandbox）']"
+ },
+ {
+  "name": "错误行不可被应用（即使勾选）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "没有旧配置时缺必填（appSecret/密码）→ 错误并指出缺哪项",
+  "pass": true,
+  "detail": "['缺少：appSecret', '缺少：密码']"
+ },
+ {
+  "name": "无表头 CSV（GB18030）：按 平台/账号/密码/网址 读取",
+  "pass": true,
+  "detail": "{'batch': '9858bcb6c6f9', 'rows': [{'i': 0, 'row': 1, 'platform_text': '云途', 'pid': 'yuntu', 'name':"
+ },
+ {
+  "name": "制表符分隔文本（从 Excel 复制）可读取",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "表头别名/乱序（英文列名）可识别",
+  "pass": true,
+  "detail": "{'batch': '1da3de28c9ea', 'rows': [{'i': 0, 'row': 2, 'platform_text': 'yuntu', 'pid': 'yuntu', 'nam"
+ },
+ {
+  "name": "导出 xlsx/密钥不导出：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "导出 csv/密钥不导出：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "导出 xlsx/密钥打码：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "导出 csv/密钥打码：不含任何密钥明文",
+  "pass": true,
+  "detail": "leak=[]"
+ },
+ {
+  "name": "打码导出的行里能看到打码形式（含 ****）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "导出不提供明文选项",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "导出(打码)再导入：不会破坏已有密钥",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "导出(不含密钥)再导入：不会清空已有密钥",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "配置文件权限仍为 600",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 文件菜单含 导入账号/下载模板/导出",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 平台账号页有 批量导入/下载模板/导出 按钮",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 预览表：4 行，含 新增/跳过/错误 标签，不显示密码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 预览：可导入行默认勾选，错误/跳过行禁用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 导入完成：逐个自动测试并显示结果（成功 2）",
+  "pass": true,
+  "detail": "tested=['yuntu', 'huanyang']"
+ },
+ {
+  "name": "UI 导出（默认不导出密钥）得到 xlsx 且不含密钥",
+  "pass": true,
+  "detail": "账号配置导出_不含密钥.xlsx"
+ },
+ {
+  "name": "UI 下载模板（Excel）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "UI 无 JS 报错",
+  "pass": true,
+  "detail": "[]"
+ }
+]

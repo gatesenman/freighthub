@@ -1,0 +1,11 @@
+data
+dist
+reports
+screenshots
+tests
+scripts
+quote
+__pycache__
+*.pyc
+installer
+.git

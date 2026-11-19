@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "货代询价助手 FreightHub（试用）",
+  "short_name": "FreightHub",
+  "version": "1.0.1",
+  "description": "右侧边栏：一键查询多个货代平台的运价，显示每个平台的最低价和全部最低价。只读查询，不会下单。（未授权版本 / 试用）",
+  "minimum_chrome_version": "116",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6NGUs/tppxDezQR4xCQi/H42y9K6KiMZ021Br5C/LqG/TgAJghpebyYcGGWrBsToBbQYU9+rkXDkREj5Z/TQZm71PgegOAzkD/vCsZf+UZWcphOnoE9pn740C0aVIvyT+TtA22+w7LwTiiGe21IWk8gfMDiXAH7QqYrF4x/gw6zHcj+qDiu5lkOgsNSuO4yB9m6/XdVDmXt1gTr+OrWV8jwVFQd3pE6Fu8b/hHq+QtBJabqc1QHVw88EK0Rop0pUKM2J6P4/mwFU4wlOI8KW14HvV58bYSIFfe24Dy7omcmojDR54v7ibNIftuj6PZgtStKyhzCp59Gi3d+zBEDffwIDAQAB",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "打开 FreightHub 询价侧边栏",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "sidePanel",
+    "contextMenus",
+    "storage",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://freight.gaosichun.dev/*",
+    "https://freight-hub-web-virid.vercel.app/*",
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "commands": {
+    "open-panel": {
+      "suggested_key": {
+        "default": "Alt+Shift+F",
+        "mac": "Alt+Shift+F"
+      },
+      "description": "打开 FreightHub 询价侧边栏"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

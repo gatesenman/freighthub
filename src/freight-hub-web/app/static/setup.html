@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>首次设置 - 货代询价助手 FreightHub</title>
+<style>
+html,body{margin:0;height:100%;background:#f3f3f3;font:13px "Segoe UI","Microsoft YaHei",sans-serif;color:#222}
+.wrap{height:100%;display:flex;align-items:center;justify-content:center}
+.dlg{width:400px;background:#fff;border:1px solid #888;border-radius:8px;box-shadow:0 10px 36px rgba(0,0,0,.25);overflow:hidden}
+.dh{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#eef2f8;border-bottom:1px solid #dcdcdc;font-weight:600}
+.dh svg{width:18px;height:18px}
+.db{padding:18px 20px 8px}
+.row{display:flex;align-items:center;margin-bottom:12px}
+.row label{width:60px;color:#444}
+.row input{flex:1;height:26px;padding:0 6px;border:1px solid #bdbdbd;border-bottom-color:#8a8a8a;border-radius:3px;font:inherit;outline:0;min-width:0}
+.row input:focus{border-color:#0f6cbd;border-bottom:2px solid #0f6cbd;padding-bottom:0}
+#err{min-height:18px;color:#c42b1c;font-size:12px;margin:-4px 0 6px 60px}
+.df{padding:8px 12px;background:#f3f3f3;border-top:1px solid #ddd;display:flex;align-items:center;justify-content:space-between}
+.df span{color:#888;font-size:12px}
+.btn{height:26px;padding:0 22px;border:1px solid #0b5cad;border-radius:4px;background:#0f6cbd;color:#fff;font:inherit;cursor:pointer}
+.btn:hover:not(:disabled){background:#0c5aa0}.btn:disabled{opacity:.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <form class="dlg" id="f" autocomplete="on">
+    <div class="dh"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="4" fill="#0f6cbd"/><path d="M6 15.5V9l6-3 6 3v6.5l-6 3z M6 9l6 3 6-3 M12 12v6.5" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>货代询价助手 FreightHub — 首次设置</div>
+    <div class="db">
+      <div class="row"><label for="c">设置码</label><input id="c" name="code" type="password" autocomplete="off" autofocus></div>
+      <div class="row"><label for="u">管理员</label><input id="u" name="username" type="text" value="admin" autocomplete="username"></div>
+      <div class="row"><label for="p">密码</label><input id="p" name="password" type="password" autocomplete="new-password" placeholder="至少 8 位"></div>
+      <div id="err"></div>
+    </div>
+    <div class="df"><span>设置码在服务器环境变量 FH_SETUP_CODE</span><button class="btn" id="ok" type="submit">创建管理员</button></div>
+  </form>
+</div>
+<script>
+const f = document.getElementById("f"), err = document.getElementById("err"), ok = document.getElementById("ok");
+f.onsubmit = async e => {
+  e.preventDefault(); err.textContent = ""; ok.disabled = true;
+  try {
+    const r = await fetch("/api/setup", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ code: f.c.value.trim(), username: f.u.value.trim(), password: f.p.value }) });
+    if (r.ok) { location.href = "/login"; return; }
+    let m = r.statusText; try { m = (await r.json()).detail || m; } catch (x) {}
+    err.textContent = m; f.p.value = "";
+  } catch (x) { err.textContent = "无法连接服务器"; }
+  ok.disabled = false;
+};
+</script>
+</body>
+</html>

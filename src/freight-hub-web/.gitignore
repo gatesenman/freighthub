@@ -1,0 +1,12 @@
+data/
+*.pyc
+__pycache__/
+.venv/
+dist/
+build/
+.secrets/
+ADMIN_PASSWORD.txt
+SETUP_CODE.txt
+.env*
+.vercel/
+.vercel

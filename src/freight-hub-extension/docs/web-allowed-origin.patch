@@ -1,0 +1,14 @@
+--- a/部署说明.md
++++ b/部署说明.md
+@@ -24,3 +24,11 @@
+ - 重新部署：`vercel deploy --prod`（`.vercelignore` 已排除 .secrets / ADMIN_PASSWORD.txt / tests / data）。
+ - 线上验收：`python scripts/live_verify.py https://freight.gaosichun.dev`（Playwright，读 ADMIN_PASSWORD.txt）。
+ - 审计日志不自动清理（Neon 免费档 0.5 GB）；查询历史每用户保留最近 300 条。
++
++## Chrome 扩展（FreightHub 侧边栏，v1.0.0）接入
++- 扩展用站点自己的会话 Cookie（`fh_session`，HttpOnly / Secure / SameSite=Lax）+ `X-CSRF-Token`，**不需要给站点加 CORS**（扩展声明了站点的 host_permissions，请求不受 CORS 限制，Cookie 会随请求发送）。
++- 唯一的服务端相关点是 `Origin` 校验：扩展发出的 POST/PUT/DELETE 的 Origin 是 `chrome-extension://<扩展ID>`。扩展内置了一条「把发往本站的写请求 Origin 改写成本站 Origin」的规则，所以**不改服务端也能用**（已对 https://freight.gaosichun.dev 实测：登录、读取元数据、发起查询请求均正常）。
++- 推荐（更干净，可去掉改写规则）：在 Vercel 项目 production 环境变量加
++  `FREIGHT_HUB_ALLOWED_ORIGINS=jepddgoigapaeamalcmjembhbpllalog`
++  （值是扩展 ID，即 `urlparse(origin).netloc`，不要带 `chrome-extension://`；多个用逗号分隔），然后 `vercel deploy --prod`。
++- 不要把 `*`、`null` 或整个 `chrome-extension://` 前缀加进白名单；换了扩展签名密钥后 ID 会变，需要同步更新。

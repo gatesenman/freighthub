@@ -1,0 +1,9 @@
+# 桌面版 / 自建服务器版依赖（Vercel 网页版用 requirements.txt）
+fastapi>=0.110
+uvicorn>=0.29
+requests>=2.31
+beautifulsoup4>=4.12
+websocket-client>=1.6
+pywebview>=5.0; sys_platform == "win32"
+pg8000>=1.31
+cryptography>=42

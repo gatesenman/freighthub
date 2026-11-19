@@ -1,0 +1,73 @@
+{
+  "ts": "2026-10-31 14:27:20",
+  "results": [
+    {
+      "platform": "yutong",
+      "status": "ok",
+      "rows": 60,
+      "min_total": 1.5,
+      "error_kind": null,
+      "note": "",
+      "http_calls": 3,
+      "logins": 1
+    },
+    {
+      "platform": "huanyang",
+      "status": "ok",
+      "rows": 20,
+      "min_total": 250.81,
+      "error_kind": null,
+      "note": "",
+      "http_calls": 2,
+      "logins": 0
+    },
+    {
+      "platform": "zhonghang",
+      "status": "ok",
+      "rows": 52,
+      "min_total": 135.0,
+      "error_kind": null,
+      "note": "",
+      "http_calls": 3,
+      "logins": 1
+    },
+    {
+      "platform": "yuntu",
+      "status": "ok",
+      "rows": 33,
+      "min_total": 117.0,
+      "error_kind": null,
+      "note": "",
+      "http_calls": 1,
+      "logins": 0
+    },
+    {
+      "platform": "shunfeng",
+      "status": "error",
+      "rows": 0,
+      "min_total": null,
+      "error_kind": "no_account",
+      "note": "预估运费需要客户编码 customerCode（IUOP 管理中心-基本信息-客户编号），请在账号页补填",
+      "http_calls": 0,
+      "logins": 0
+    },
+    {
+      "platform": "yanwen",
+      "status": "skipped",
+      "rows": 0,
+      "min_total": null,
+      "error_kind": null,
+      "note": "未配置账号"
+    },
+    {
+      "platform": "xinhang",
+      "status": "ok",
+      "rows": 36,
+      "min_total": 244.96,
+      "error_kind": null,
+      "note": "",
+      "http_calls": 2,
+      "logins": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+-r requirements.txt
+playwright>=1.44   # 仅端到端测试截图用
+httpx

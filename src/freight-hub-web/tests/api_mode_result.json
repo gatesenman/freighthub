@@ -1,0 +1,432 @@
+[
+ {
+  "name": "燕文 MD5 签名 = 官方文档示例 bc5f1792…",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "云途 HMAC-SHA256（含 body）与 SDK 规则一致",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "云途 HMAC-SHA256（GET 无 body）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 URLEncode 与 Java URLEncoder 一致（空格→+，~→%7E，* 保留，中文 UTF-8）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 msgDigest = Base64(MD5(URLEncode(msgData+timestamp+checkWord)))",
+  "pass": true,
+  "detail": "MZLCJpgWfw7dOmRPsEuMdw=="
+ },
+ {
+  "name": "7 个平台都有授权模式定义（欣航为单一公开模式）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "欣航：单一模式「公开网站，无需授权」，无账号/API 字段",
+  "pass": true,
+  "detail": "公开网站，无需授权"
+ },
+ {
+  "name": "默认授权模式为登录账号授权",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "欣航：未配置也可用（不是待配置账号）",
+  "pass": true,
+  "detail": "idle"
+ },
+ {
+  "name": "欣航：尝试切到 API 模式被忽略",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "有公开文档的平台标注 public，其余标注需申请",
+  "pass": true,
+  "detail": "{'yuntu': 'public', 'zhonghang': 'public', 'xinhang': 'apply', 'huanyang': 'public', 'yanwen': 'public', 'shunfeng': 'public', 'yutong': 'public'}"
+ },
+ {
+  "name": "每个平台 API 模式都有字段/文档说明",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "切换到 API 模式并保存字段",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "API 模式下 secret 字段不回显明文",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "API 模式字段值（非密钥）回显",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "切回登录模式后登录字段仍在（两套凭据互不覆盖）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "非法授权模式被拒绝(400)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "未知字段被忽略",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "API 模式未配置时状态为待配置账号",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "燕文 API 模式未填凭据 → 待配置账号",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "API 测试连接：未填凭据返回 no_account",
+  "pass": true,
+  "detail": "尚未填写客户号 user_id 和密钥 apitoken"
+ },
+ {
+  "name": "云途 API：先 OAuth2 client_credentials 换 token",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "云途 API：请求头 token/date/sign 且签名可复算",
+  "pass": true,
+  "detail": "DCmhrKsP+VA4hbGb"
+ },
+ {
+  "name": "云途 API：查询参数含国家/重量/邮编/尺寸",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "云途 API：运价解析（RMB 折算价、时效、渠道名）",
+  "pass": true,
+  "detail": "8.5"
+ },
+ {
+  "name": "云途 API：token 缓存复用（不重复换取）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "云途 API：测试连接",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "云途 API：appId/secret 错误 → 鉴权失败",
+  "pass": true,
+  "detail": "云途授权失败（HTTP 412）：wrong"
+ },
+ {
+  "name": "云途 API：401 重试后报鉴权失败",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "燕文 API：沙箱域名/公共参数/签名",
+  "pass": true,
+  "detail": "https://open-fat.yw56.com.cn/api/order?user_id=100000&method=calc.list"
+ },
+ {
+  "name": "燕文 API：运价解析",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "燕文 API：测试连接",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "燕文 API：文档成功码 code=0 也被接受",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "燕文 API：业务失败信息透传（如 GB 邮编必填）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 API：沙箱域名 + OAuth2 accessToken + 表单字段",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 API：msgData 含 customerCode/产品码/收寄国家/邮编/重量",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 API：逐个产品试算并解析",
+  "pass": true,
+  "detail": "顺丰国际 INT0007"
+ },
+ {
+  "name": "顺丰 API：数字签名模式带 msgDigest 且不带 accessToken",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 API：A1006 映射为鉴权失败",
+  "pass": true,
+  "detail": "顺丰接口失败：A1006 数字签名无效"
+ },
+ {
+  "name": "顺丰 登录模式提示暂未实现",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "欣航：无 API 实现、无 K5 字段",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "欣航：status 单一模式 + 文案",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "sf.global AES-256-CBC：加解密往返（含中文）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "sf.global AES：随机串不同 → 密文不同但都可解",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "sf.global AES：appKey 不符 → 解密校验失败",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "sf.global 纯 Python AES = FIPS-197 向量",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "sf.global 签名 = SHA256(字典序拼接 token/timestamp/nonce/encrypt)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰：API 模式文档指向 sf.global 开放平台",
+  "pass": true,
+  "detail": "https://openapi-portal.sf.global/document?firstMenu=DOC&secondMenu=75"
+ },
+ {
+  "name": "顺丰 sf.global：测试连接（token + AES 产品查询）",
+  "pass": true,
+  "detail": "顺丰国际开放平台授权成功（正式环境），AES 报文加解密正常，国际产品查询返回 2 个产品。"
+ },
+ {
+  "name": "顺丰 sf.global：token 为 GET + appKey/appSecret 参数",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 sf.global：dispatch 头（appKey/token/msgType/signature）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 sf.global：报文加密（请求体非明文）且含收寄国家/邮编/重量/客户编码",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 sf.global：逐产品试算解析",
+  "pass": true,
+  "detail": "国际标快（INT0007）"
+ },
+ {
+  "name": "顺丰 sf.global：缺 customerCode 提示补填",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "顺丰 sf.global：1004 没权限 → 给出关联 API 的指引（manual）",
+  "pass": true,
+  "detail": "授权成功（已取得 token），但该应用没有「国际产品查询」接口权限（1004 "
+ },
+ {
+  "name": "顺丰：丰桥备选仍可选",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS API：中航 getAuth + 渠道列表",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 C001 / 公司 1），渠道列表 2 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "OIS API：中航 状态=运价试算可用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS API：环洋 getAuth + 渠道列表",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 C001 / 公司 1），渠道列表 2 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "OIS API：环洋 状态=运价试算可用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS API：雨桐 getAuth + 渠道列表",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 C001 / 公司 1），渠道列表 2 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "OIS API：雨桐 状态=运价试算可用",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS API：环洋 默认对接环境为易快通 ekttech.net/pos-web",
+  "pass": true,
+  "detail": "https://ekttech.net/pos-web,https://openapi.intelink.net.cn"
+ },
+ {
+  "name": "OIS API：getAuth 表单提交 appKey/appSecret，默认域名 openapi.intelink.net.cn",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS 运价试算：body1 含 weig/destNo/packing/reZip/pieces",
+  "pass": true,
+  "detail": "{\"weig\": 1, \"destNo\": \"US\", \"packing\": \"WPX\", \"reZip\": \"90001\", \"pieces\": [{\"actual\": 1, \"length\": 30, \"width\": 20, \"height\": 10}]}"
+ },
+ {
+  "name": "OIS 签名：MD5(Base64(排序参数)+appSecret) 大写，头 token 伪装可还原",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS 解析：占位价 1000000 被过滤，其余 3 条",
+  "pass": true,
+  "detail": "['USZ-H01美国包中包6000', 'HKZ-01中港', '美元渠道']"
+ },
+ {
+  "name": "OIS 解析：总价/币种/时效/分组/费用明细",
+  "pass": true,
+  "detail": "[{\"label\": \"运费\", \"value\": \"123\"}, {\"label\": \"燃油\", \"value\": \"10\"}, {\"label\": \"附加费"
+ },
+ {
+  "name": "OIS 解析：极低价（中港段）打上疑似境内标记",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS 汇总查询接口可用（API 模式 → 查价而不是待申请）",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS：token 过期(1005) → 自动重新授权重试",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "OIS API：错误密钥 → 鉴权失败",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "模式切换后登录模式的原有实现保留",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "name": "【在线】燕文官方沙箱：鉴权成功(user_id=100000)",
+  "pass": true,
+  "detail": "开放平台 API 鉴权成功（沙箱环境，国家列表 250 项）。 6.1s"
+ },
+ {
+  "name": "【在线】燕文官方沙箱：calc.list 运价试算可调用",
+  "pass": true,
+  "detail": "29 条"
+ },
+ {
+  "name": "【在线】顺丰 sf.global 沙箱（文档公开凭据）：token + AES 加解密 + 国际产品查询",
+  "pass": true,
+  "detail": "5 个产品"
+ },
+ {
+  "name": "【在线】欣航公开价页面：美国 1kg 有报价",
+  "pass": true,
+  "detail": "36 条，最低 244.96"
+ },
+ {
+  "name": "【在线·只读】雨桐 OIS：getAuth + getProductList",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 *** / 公司 10405），渠道列表 116 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "【在线·只读】雨桐 OIS：美国 1kg 运价试算返回多个渠道",
+  "pass": true,
+  "detail": "60 条，最低（≥10）143.0"
+ },
+ {
+  "name": "【在线·只读】环洋 OIS：getAuth + getProductList",
+  "pass": true,
+  "detail": "OIS 授权成功（客户 <acct> / 公司 -），渠道列表 940 个产品，运价试算接口可用。"
+ },
+ {
+  "name": "【在线·只读】环洋 OIS：US 1kg 运价试算返回多个渠道",
+  "pass": true,
+  "detail": "20 条，最低 250.81"
+ },
+ {
+  "name": "【在线·只读】环洋 OIS：GB 0.5kg 运价试算返回多个渠道",
+  "pass": true,
+  "detail": "20 条，最低 191.86"
+ },
+ {
+  "name": "【在线】云途 prod 假凭据 → 授权失败",
+  "pass": true,
+  "detail": "云途授权失败（HTTP 412）：应用id或应用秘钥错误"
+ },
+ {
+  "name": "【在线】顺丰沙箱 假凭据 → 授权失败",
+  "pass": true,
+  "detail": "顺丰授权失败：A1011 auth_error:partner_is_not_exist or secret_is_error"
+ },
+ {
+  "name": "【在线】顺丰国际 sf.global 假凭据 → 授权失败",
+  "pass": true,
+  "detail": "顺丰国际授权失败：1005 App is not exist"
+ },
+ {
+  "name": "【在线】OIS 假 appKey → 鉴权失败",
+  "pass": true,
+  "detail": "OIS 授权失败：应用不存在"
+ }
+]

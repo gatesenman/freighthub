@@ -1,0 +1,37 @@
+:root{--bg:#f3f3f3;--bd:#d1d1d1;--bd2:#e5e5e5;--txt:#1b1b1b;--muted:#6b6b6b;--acc:#0f6cbd;--acc-h:#115ea3;--ok:#107c10;--warn:#c75b00;--err:#c42b1c;
+--font:"Segoe UI Variable Text","Segoe UI","Microsoft YaHei UI","Microsoft YaHei","PingFang SC",sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--txt);font:12px/1.35 var(--font);user-select:none;-webkit-user-select:none}
+input,button{font:inherit;color:inherit}
+input{user-select:text;-webkit-user-select:text}
+#qw{display:flex;flex-direction:column;height:100vh;border:1px solid #8a8a8a;background:var(--bg)}
+#qh{height:30px;flex:none;display:flex;align-items:center;background:#eef2f8;border-bottom:1px solid #dcdcdc;padding-left:10px;gap:8px}
+#qh .ti{font-weight:600;color:#1f3a5c}#qhSub{color:var(--muted)}#qhKey{margin-left:auto;color:var(--muted);font-size:11px}
+#qx{width:40px;height:30px;border:0;background:transparent;color:#555;cursor:default}#qx:hover{background:#e81123;color:#fff}
+#qf{padding:8px 10px 4px;background:#fff;border-bottom:1px solid var(--bd2)}
+.r1{display:flex;gap:8px;align-items:flex-end}
+.r1 label{display:flex;flex-direction:column;gap:2px;color:var(--muted);flex:1}.r1 label.w{flex:none;width:92px}
+input{height:26px;border:1px solid var(--bd);border-radius:2px;padding:0 6px;background:#fff;color:var(--txt);width:100%}
+input:focus{outline:0;border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.go{height:26px;padding:0 18px;border:1px solid var(--acc);background:var(--acc);color:#fff;border-radius:2px;cursor:pointer}.go:hover{background:var(--acc-h)}.go:disabled{opacity:.6}
+.r2{display:flex;align-items:center;gap:4px;margin-top:6px;color:var(--muted);padding-bottom:4px}.r2 span{margin-right:4px;white-space:nowrap}.r2 input{width:56px}.r2 i{font-style:normal}
+.best{margin:8px 10px 4px;padding:6px 10px;border:1px solid #bfe0bf;background:#e9f6e9;border-radius:2px;color:#0b5a0b;min-height:34px;display:flex;align-items:center;gap:8px}
+.best.idle{background:#f8f8f8;border-color:var(--bd2);color:var(--muted)}.best.fail{background:#fdf1ef;border-color:#f2c6c0;color:var(--err)}.best.wait{background:#eef5fc;border-color:#c5dcf2;color:#0f548c}
+.best b.p{font-size:18px;color:#0b5a0b}.best .sp{flex:1}.best .m{color:#3f6b3f}
+#qlist{flex:1;overflow-y:auto;margin:0 10px;border:1px solid var(--bd);background:#fff}
+.it{display:grid;grid-template-columns:62px 1fr 92px 56px;align-items:center;gap:6px;padding:5px 8px;border-bottom:1px solid var(--bd2);cursor:default;min-height:30px}
+.it:nth-child(even){background:#f6f8fb}.it:hover{background:#e8f1fb}.it.ok{cursor:pointer}
+.it.min{background:#e9f6e9!important;box-shadow:inset 3px 0 0 var(--ok)}
+.it .ch{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.it .ch small{display:block;color:var(--muted);font-size:11px;overflow:hidden;text-overflow:ellipsis}
+.it .pr{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}.it.min .pr{color:var(--ok)}.it .dy{text-align:right;color:var(--muted)}
+.it.empty-ok .ch,.it.err .ch,.it.pend .ch,.it.skip .ch,.it.loading .ch{color:var(--muted)}.it.err .ch{color:var(--err)}
+.tg{display:inline-block;margin-left:5px;padding:0 4px;border-radius:2px;background:var(--ok);color:#fff;font-size:10px;line-height:14px}
+.pb{display:inline-block;padding:0 6px;border-radius:2px;font-size:11px;line-height:16px;border:1px solid;white-space:nowrap}
+.pb.yuntu{color:#0b6a0b;background:#e9f6e9;border-color:#bfe0bf}.pb.zhonghang{color:#0f548c;background:#e6f1fb;border-color:#b9d6ef}
+.pb.xinhang{color:#8a4b00;background:#fff1de;border-color:#f1cf9c}.pb.huanyang{color:#005b70;background:#e0f5fa;border-color:#a9dbe6}
+.pb.yanwen{color:#6b2c91;background:#f4e8fb;border-color:#d9bdea}.pb.shunfeng,.pb.yutong{color:#555;background:#eee;border-color:#ccc}
+.spin{display:inline-block;width:12px;height:12px;border:2px solid #cfe0f2;border-top-color:var(--acc);border-radius:50%;animation:s .7s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes s{to{transform:rotate(360deg)}}
+.empty{padding:14px;color:var(--muted);text-align:center}
+#qf2{flex:none;display:flex;align-items:center;gap:10px;padding:5px 10px;color:var(--muted);font-size:11px}#qf2 label{display:flex;align-items:center;gap:4px;white-space:nowrap}
+#qf2 input{width:auto;height:auto}.hint{margin-left:auto;text-align:right}
