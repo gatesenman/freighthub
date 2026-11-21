@@ -46,6 +46,14 @@ cd freight-hub
 - [浏览器扩展](freight-hub-extension/README.md)
 - [说明](说明-先看我.md)
 
+## 贡献
+
+欢迎通过 Issue 和 Pull Request 参与，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。参与时请遵守 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
+
+## 许可证
+
+本仓库尚未附带 LICENSE 文件，许可证未指定。
+
 ---
 
 ## English
@@ -98,3 +106,10 @@ cd freight-hub
 - [浏览器扩展](freight-hub-extension/README.md)
 - [说明](说明-先看我.md)
 
+## Contributing
+
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Please report vulnerabilities privately via [SECURITY.md](SECURITY.md). This project follows [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## License
+
+No LICENSE file is included in this repository; the license is unspecified.
